@@ -1,0 +1,84 @@
+<view>
+    <view class="top_wrapper">
+
+        <view class="clearfix">
+            <view class="uname">
+                <view>
+                    <p style="line-height:0; margin-bottom:5px;">
+                        <view class="uname_font">
+                            小哪吒</view>
+                    </p>
+                </view>
+
+                <view class="num_wrapper">
+                    <view>
+                        <p style="line-height:0; margin-bottom:5px;">
+                            <view class="white_word">
+                                憨憨哪吒，天天开心</view>
+                        </p>
+                    </view>
+                </view>
+
+            </view>
+            <view class="avater_wrapper">
+                <view class="face">
+                    <view style="display: none; background-color: transparent;"></view>
+                    <view class="wrapper">
+                        <image class="img" src="../../icons/avater.jpg" draggable="false"
+                            style="display: block; width: 60px; height: 60px;" />
+                    </view>
+                </view>
+                <view class="region gesture " style="display: none;"></view>
+            </view>
+
+        </view>
+        <view class="clearfix" style="margin-top:20px">
+            <view style="width: 30%;float: left;margin-left:40rpx">
+                <view class="black_word">97</view>
+                <view class="white_word">分享</view>
+            </view>
+            <view style="width: 30%;float: left;">
+                <view class="black_word">97</view>
+                <view class="white_word">粉丝</view>
+            </view>
+        </view>
+        <view style="height:20px"></view>
+    </view>
+    <view style="margin-top:16px">
+        <button class="share_button">
+            我的分享
+        </button>
+        <view class="love_wrapper">
+            <image src="../../icons/心.png" class="love_icon"></image>
+        </view>
+
+        <view class="plus_wrapper">
+            <image src="../../icons/加号.png" class="love_icon"></image>
+        </view>
+    </view>
+
+    <view style="clear:both">
+        
+    </view>
+
+</view>
+
+<!--楼层-->
+<view class="index_floor">
+    <view class="floor_group">
+        <view class="floor_title">
+            
+        </view>
+        <view class="floor_list">
+            <navigator url="/pages/item_info/index" open-type="navigate"
+            wx:for="{{floor_list}}"
+            wx:for-item="item2"
+            wx:for-index="index2"
+            wx:key="id">
+                <image src="{{item2.src}}" mode="widthFix"></image>
+                <view class="recommend">{{item2.recommend}}</view>
+            </navigator>
+        </view>
+    </view>
+</view>
+<!--楼层结束-->
