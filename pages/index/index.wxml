@@ -9,9 +9,9 @@
         <swiper indicator-dots autoplay circular vertical indicator-color="rgba(0,0,0,.3)" interval="2000" duration="1000">
             <swiper-item
             wx:for="{{swipper_list}}"
-            wx:key="goods_id">
+            wx:key="postId">
                 <navigator>
-                    <image src="{{item.image_src}}" mode="widthFix"></image>
+                    <image src="{{item.coverLink}}" mode="scaleToFill"></image>
                 </navigator>
             </swiper-item>
         </swiper>
@@ -25,17 +25,42 @@
                 好物推荐
             </view>
             <view class="floor_list">
-                <navigator url="/pages/item_info/index" open-type="navigate"
-                wx:for="{{floor_list}}"
+                <navigator url="/pages/item_info/index?recommend_id={{item2.postId}}" open-type="navigate"
+                wx:for="{{swipper_list}}"
                 wx:for-item="item2"
                 wx:for-index="index2"
-                wx:key="id">
-                    <image src="{{item2.src}}" mode="widthFix"></image>
-                    <view class="recommend">{{item2.recommend}}</view>
+                wx:key="postId">
+                    <image src="{{item2.coverLink}}" mode="scaleToFill"></image>
+                    <view class="recommend">{{item2.title}}</view>
                 </navigator>
             </view>
         </view>
     </view>
     <!--楼层结束-->
 
+    
+
 </view>
+<view class="items">
+    <view class="items_group">
+        <view class="items_title">
+            帖子详情
+        </view>
+        <view class="items_list">
+            <navigator url="/pages/item_info/index?recommend_id={{item2.postId}}" open-type="navigate"
+            wx:for="{{items_list}}"
+            wx:for-item="item2"
+            wx:for-index="index2"
+            wx:key="postId">
+                <image src="{{item2.coverLink}}" mode="widthFix"></image>
+                <view class="recommend">{{item2.title}}</view>
+            </navigator>
+        </view>
+    </view>
+</view>
+
+
+<view class="weui-loadmore" hidden="{{hidden}}">
+    <view class="weui-loading"></view>
+    <view class="weui-loadmore__tips">努力加载中</view>
+</view>  

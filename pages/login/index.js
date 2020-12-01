@@ -57,7 +57,7 @@ Page({
     if( !flg ){
       var that=this;
       wx.request({
-        url: 'http://106.14.209.11:11451/user/sendCode',
+        url: 'https://www.forestj.top:11451/user/sendCode',
         data: {
           phone: num
         },
@@ -147,7 +147,7 @@ Page({
     }
     if(!flg){
       wx.request({
-        url: 'http://106.14.209.11:11451/user/login/phone ',
+        url: 'https://www.forestj.top:11451/user/login/phone ',
         data: {
           phone: num,    //用户手机号
           code: code            //短信验证码
