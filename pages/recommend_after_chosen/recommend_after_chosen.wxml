@@ -1,0 +1,26 @@
+<view class="recommend_text">
+  <text>
+    <text class="title">亲爱的“小哪吒”：</text>
+    <text class="content">\n小鲸思考了一番</text>
+  </text>
+</view>
+
+<!--楼层-->
+<view class="index_floor">
+    <view class="floor_group">
+        <view class="floor_title">
+            相关推荐
+        </view>
+        <view class="floor_list">
+            <navigator url="/pages/item_info/index?recommend_id={{item2.postId}}" open-type="navigate"
+            wx:for="{{swipper_list}}"
+            wx:for-item="item2"
+            wx:for-index="index2"
+            wx:key="postId">
+                <image src="{{item2.coverLink}}" mode="scaleToFill"></image>
+                <view class="recommend">{{item2.title}}</view>
+            </navigator>
+        </view>
+    </view>
+</view>
+<!--楼层结束-->

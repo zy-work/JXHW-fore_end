@@ -1,7 +1,3 @@
-var sectionData = [];
-var ifLoadMore = null;
-var page = 1;//默认第一页
-
 //Page Object
 Page({
   data: {
@@ -34,21 +30,14 @@ Page({
         src: "https://pic2.zhimg.com/80/v2-9aa5c0ca5c5709824e54e14d0bfc0c5d_1440w.jpg",
         recommend:"超好用的书支架"
       }
-    ],
+    ]
     // floor_list: []
-    items_list:[],
-
-    sectionData:[],
-    ifLoadMore:null,
-    page:1,
-    hidden:false,
-    
   },
   //options(Object)
   onLoad: function(options){
     wx.request({
       // url: 'https://api-hmugo-web.itheima.net/api/public/v1/home/swiperdata',
-      url: 'https://www.forestj.top:11451/post/advice',
+      url: 'http://106.14.209.11:11451/post/search',
       method: 'GET',
       header: {
         Authorization: wx.getStorageSync("token")
@@ -57,7 +46,7 @@ Page({
       // responseType: 'text',
       success: (result)=>{
         console.log(result)
-        var list = result.data.data
+        var list = result.data.data.records
         var url_pre = 'http://forestj.oss-cn-beijing.aliyuncs.com/'
         for(var i=0; i < list.length; i++){
           list[i].coverLink = url_pre + list[i].coverLink;
@@ -67,58 +56,5 @@ Page({
         })
       }
     });
-
-    var that = this;
-    that.newGoodsShow();
-
-  },
-
-  newGoodsShow: function (success) {
-    var that = this;
-    wx.request({
-      url: 'https://www.forestj.top:11451/post/search?pageSize=2&pageNum='+page,
-      method: 'GET',
-      header: {
-        Authorization: wx.getStorageSync("token")
-      },
-      success: (result)=>{
-        console.log(result)
-        var list = result.data.data.records
-        if(list.length==0){
-          wx.showToast({
-            title: '暂无更多内容！',
-            icon: 'loading',
-            duration: 1500
-          })
-          ifLoadMore = false;
-          wx.stopPullDownRefresh();
-        }
-        page += 1;
-        if(ifLoadMore == null) ifLoadMore=true;
-        var url_pre = 'http://forestj.oss-cn-beijing.aliyuncs.com/'
-        for(var i=0; i < list.length; i++){
-          list[i].coverLink = url_pre + list[i].coverLink;
-        }
-        var items_list = that.data.items_list
-        that.setData({
-          items_list: items_list.concat(list)
-        })
-        // this.setData({
-        //   items_list: list
-        // })
-      }
-    });
-    
-  },
-
-  onReachBottom: function () {
-    console.log("上拉");
-    var that = this;
-    console.log('加载更多');
-    if (ifLoadMore != null){
-      that.newGoodsShow();
-
-    }
   }
-
 });
