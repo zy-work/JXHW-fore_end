@@ -1,0 +1,44 @@
+<!--pages/upload/upload.wxml-->
+<view class="page">
+    <view class="text">
+        <text class="title">分享好物</text>
+        <text class="require">单张文件不超过20MB</text>
+    </view>
+    <view class="item-info">
+        <view class="uploadImg" bindtap="choose">
+            <image wx:if="{{ImgPath=='../../icons/加号.png'}}" src="{{ ImgPath }}" style="width:80rpx;height:80rpx;"/>
+            <image wx:else src="{{ ImgPath }}" style="width:100%;height:100%;" />
+        </view>
+        <form bindsubmit="formSubmit">
+            <view class="comment">
+                <input class="comment_title" name="title" placeholder="请输入标题" />
+                <textarea  class="comment_content" name="comment" placeholder="请输入好物描述"></textarea>
+            </view>
+            <view >
+                <view class="score">
+                    <image class="score_icon" src="../../icons/magicbang.png" />
+                    <text class="score_class">美观</text>
+                    <input class="item_score" name="beauty_score" placeholder="请输入评分，1~10" />
+                </view>
+                <view class="score">
+                    <image class="score_icon" src="../../icons/price.png" />
+                    <text class="score_class">价格</text>
+                    <input class="item_score" name="price_score" placeholder="请输入评分，1~10" />
+                </view>
+                <view class="score">
+                    <image class="score_icon" src="../../icons/rocket.png" />
+                    <text class="score_class">质量</text>
+                    <input class="item_score" name="quality_score" placeholder="请输入评分，1~10" />
+                </view>
+                <view class="score">
+                    <image src="../../icons/type.png" class="score_icon"/>
+                    <text class="score_class">种类</text>
+                    <picker value="{{ index }}" range="{{ type }}" bindchange="bindPickerChange" name="type">
+                        <view class="picker" >{{type[index]?type[index]:'请选择'}}</view>
+                    </picker>
+                </view>
+            </view>
+            <button class='Button' form-type="submit" >发布</button>
+        </form>
+    </view>
+</view>

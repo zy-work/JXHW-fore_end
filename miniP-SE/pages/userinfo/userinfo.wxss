@@ -1,0 +1,62 @@
+/* pages/userinfo/userinfo.wxss */
+.con{
+    display: flex;
+    flex-direction: column;
+}
+.title{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-top: 40rpx;
+    margin-bottom: 50rpx;
+}
+.title-text{
+    font-size: 40rpx;
+    font-weight: bolder;
+    margin-left: 50rpx;
+}
+.head{
+    width:120rpx;
+    height: 120rpx;
+    border: 1rpx solid #ffffff;
+    border-radius: 120rpx;
+    margin-left: 370rpx;
+}
+.info{
+    display: flex;
+    flex-direction: column;
+    margin-left: 50rpx;
+}
+.name{
+    display: flex;
+    margin-bottom: 40rpx;
+}
+.gender{
+    display: flex;
+    margin-bottom: 40rpx;
+}
+.sign{
+    display: flex;
+    margin-bottom: 40rpx;
+}
+.inputType{
+    color: #9A9A9A;
+    margin-right: 20rpx;
+}
+.radio{
+    margin-right: 20rpx;
+}
+.button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200rpx;
+    height: 80rpx;
+    border:1rpx solid #ffffff;
+    border-radius: 100rpx;
+    background-color: #87B5D6;
+    color: #ffffff;
+    margin-top: 200rpx;
+    font-size: small;
+    font-weight: bolder;
+}

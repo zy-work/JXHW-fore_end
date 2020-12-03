@@ -1,0 +1,41 @@
+<view class="top">
+    <image class="img" src="../../images/v2_qitg24.png"></image>
+</view>
+
+<view class="container">
+    <view class="title" data-boldtype="0">welcome to 鲸享好物</view>
+    <!-- 手机号输入 -->
+    <view class="input1">
+        <image class="phone-icon" src="../../icons/phone.png"></image>
+        <image class="line" src="../../icons/line.png"></image>
+        <input class="inputtext"
+        placeholder="请输入手机号"
+        placeholder-class="input-placeholder"
+        bindinput="TeleNumberInput"
+        value="{{ TeleNumber }}" />
+    </view>
+    <!-- 验证码输入 -->
+    <view class="input2">
+        <image class="code-icon" src="../../icons/Code.png" />
+        <image class="line" src="../../icons/line.png"></image>
+        <input class="inputtext"
+        placeholder="请输入验证码"
+        placeholder-class="input-placeholder"
+        password="{{ true }}"
+        bindinput="CodeNumberInput"
+        value="{{ CodeNumber }}" />
+        <button class="getcode" bindtap="SendCode" disabled="{{ btnDisabled }}">{{ btnValue }}</button>
+    </view>
+
+    <view class="con">未注册的手机号验证后自动创建摄图账号</view>
+
+    <button class="Log" bindtap="Login">
+        <view >登陆</view>
+    </button>
+    <view class="wxLogin" bindtap="wxLoginHandle" >
+        <image class="WX" src="../../icons/WX.png"></image>
+    <view class="WXtext">微信一键登录</view>
+    </view>
+</view>
+
+

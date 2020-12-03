@@ -1,0 +1,39 @@
+<view class="outer">
+
+    <view class="--mb--rich-text" data-boldtype="0"
+        style="margin-top:20rpx; font-family:PingFangSC; font-weight:700; font-size:20px; color:rgb(16, 16, 16); font-style:normal; letter-spacing:0px; line-height:30px; text-decoration:none;">
+        通知公告</view>
+    <view wx:for="{{ info }}">
+    <view class="message_wrapper clearfix">
+        <view class="avater_wrapper">
+            <view class="face">
+                <view style="display: none; background-color: transparent;"></view>
+                <view class="wrapper">
+                    <image class="img" src="../../icons/info.png" draggable="false"
+                        style="display: block; width: 40px; height: 40px;" />
+                </view>
+            </view>
+            <view class="region gesture " style="display: none;"></view>
+        </view>
+        <view style="float:left">
+            <view class="--mb--rich-text" data-boldtype="0"
+                style="font-family:PingFangSC; font-weight:700; font-size:16px; color:rgb(16, 16, 16); font-style:normal; letter-spacing:0px; line-height:22px; text-decoration:none;">
+                {{ item.headline }}</view>
+            <view data-cid="ikgkxlftt31w0ft" data-link_cid="" class="widget rich_text hleft vtop auto"
+                style="width: 182px; height: 18px; left: 66px; top: 32px; z-index: 8; font-size: 14px; text-align: left; font-weight: normal; font-style: normal; opacity: 1;">
+                <view class="rich-text">
+                    <p style="line-height:0; margin-bottom:5px;"><view class="--mb--rich-text" data-boldtype="0"
+                            style="font-family:PingFangSC; font-weight:400; font-size:12px; color:rgb(153, 153, 153); font-style:normal; letter-spacing:0px; line-height:18px; text-decoration:none;">{{ item.content }}</view>
+                    </p>
+                </view>
+                <view class="region gesture " style="display: none;"></view>
+            </view>
+        </view>
+        <view style="float:left">
+            <view class="--mb--rich-text" data-boldtype="0"
+                style="font-family:PingFangSC; font-weight:400; font-size:11px; color:rgb(181, 181, 181); font-style:normal; letter-spacing:0px; line-height:16px; text-decoration:none;">{{ item.release_time }}</view>
+        </view>
+
+    </view>
+    </view>
+</view>

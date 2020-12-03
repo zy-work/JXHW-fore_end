@@ -1,0 +1,6 @@
+<!--pages/explore/index.wxml-->
+<view class="search">
+  <image class="search-img" src="../../icons/_search.png"></image>
+  <input placeholder="搜索"></input>
+</view>
+
