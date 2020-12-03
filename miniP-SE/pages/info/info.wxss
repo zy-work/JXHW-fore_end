@@ -1,0 +1,42 @@
+.avater_wrapper {
+    float: left;
+    width: 46px;
+    height: 46px;
+    left: 267px;
+    top: 70px;
+    z-index: 6;
+    background-color: transparent;
+    border: none;
+    border-radius: 44px;
+    font-weight: normal;
+    font-style: normal;
+    opacity: 1;
+  }
+
+  .wrapper {
+    width: 40px;
+    height: 40px;
+    transform: rotate(0deg);
+  }
+  .face {
+    margin-top: 5px;
+    width: 40px;
+    height: 40px;
+    overflow: hidden;
+    border-radius: 50%;
+  }
+
+  .outer{
+      margin-left: 40rpx;
+  }
+
+  .clearfix::before,
+.clearfix::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.message_wrapper{
+    margin-top: 30rpx;
+}

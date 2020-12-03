@@ -1,0 +1,41 @@
+
+<view class="index">
+    <!--搜索框-->
+    <SearchInput>搜索热门好物</SearchInput>
+    <!--搜索框结束-->
+
+    <!--轮播图-->
+    <view class="index_swiper">
+        <swiper indicator-dots autoplay circular vertical indicator-color="rgba(0,0,0,.3)" interval="2000" duration="1000">
+            <swiper-item
+            wx:for="{{swipper_list}}"
+            wx:key="goods_id">
+                <navigator>
+                    <image src="{{item.image_src}}" mode="widthFix"></image>
+                </navigator>
+            </swiper-item>
+        </swiper>
+    </view>
+    <!--轮播图结束-->
+
+    <!--楼层-->
+    <view class="index_floor">
+        <view class="floor_group">
+            <view class="floor_title">
+                好物推荐
+            </view>
+            <view class="floor_list">
+                <navigator url="/pages/item_info/index" open-type="navigate"
+                wx:for="{{floor_list}}"
+                wx:for-item="item2"
+                wx:for-index="index2"
+                wx:key="id">
+                    <image src="{{item2.src}}" mode="widthFix"></image>
+                    <view class="recommend">{{item2.recommend}}</view>
+                </navigator>
+            </view>
+        </view>
+    </view>
+    <!--楼层结束-->
+
+</view>

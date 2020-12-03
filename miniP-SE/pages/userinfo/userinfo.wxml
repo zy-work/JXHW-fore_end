@@ -1,0 +1,29 @@
+<!--pages/userinfo/userinfo.wxml-->
+<view class="con">
+    <view class="title">
+        <text class="title-text">编辑资料</text>
+        <image wx:if="{{ info.headLink.length==0 }}" src="{{ head }}" class="head" bindtap="chooseImg"></image>
+        <image wx:else src="{{ info.headLink }}" class="head" bindtap="chooseImg"></image>
+    </view>
+    <view class="info">
+        <view class="name">
+            <text class="inputType">昵称</text>
+            <input class="input" placeholder="{{ info.username }}" placeholder-style="color:#000000" bindinput="inputname"/>
+        </view>
+        <view class="gender">
+            <text class="inputType">性别</text>
+            <radio-group bindchange="changeradio">
+                <radio   class="radio" 
+                wx:for="{{ sex }}"
+                value="{{ item.num }}"
+                wx:key="num"
+                checked="{{ item.checked }}" >{{ item.name }}</radio>
+            </radio-group>
+        </view>
+        <view class="sign">
+            <text class="inputType">签名</text>
+            <input class="input" placeholder="{{ info.userSign }}" placeholder-style="color:#000000" bindinput="inputsign"/>
+        </view>
+    </view>
+    <button class="button" bindtap="submit">保存</button>
+</view>

@@ -1,0 +1,36 @@
+
+<view class="con">
+    <navigator url="../user-message/user-message" class="user" bindtap="userhandle">
+        <image class="user-haed" wx:if="{{ information.headLink.length }}" src="https://forestj.oss-cn-beijing.aliyuncs.com/{{ information.headLink }}"></image>
+        <view >{{ information.username }}</view>
+    </navigator>
+    <view class="obj">
+        <view class="title">{{ information.title }}</view>
+        <image class="obj-img" wx:if="{{information.coverLink.length}}" mode="widthFix" src="https://forestj.oss-cn-beijing.aliyuncs.com/{{ information.coverLink }}"></image>
+    </view>
+    <view class="comments">
+        <image wx:if="{{status.collect==false}}" class="icon" src="../../icons/collection.png" bindtap="add" data-num="1"></image>
+        <image wx:else class="icon" src="../../icons/collect-hover.png" bindtap="delete" data-num="1"></image>
+        <view>{{ information.collectNum }}</view>
+        <image wx:if="{{status.good==false}}" class="icon" src="../../icons/like.png" bindtap="add" data-num="3"></image>
+        <image wx:else class="icon" src="../../icons/good-hover.png" bindtap="delete" data-num="3"></image>
+        <view>{{ information.goodNum }}</view>
+        <image wx:if="{{status.bad==false}}" class="icon" src="../../icons/cai.png" bindtap="add" data-num="2"></image>
+        <image wx:else class="icon" src="../../icons/bad-hover.png" bindtap="delete" data-num="2"></image>
+        <view>{{ information.badNum }}</view>
+    </view>
+    <view class="remark">
+        <image class="photo" src="../../icons/magicbang.png"></image>
+        <view class="score-name">美观</view>
+        <view >{{ information.beauty }}</view>
+        <image class="photo" src="../../icons/price.png"></image>
+        <view class="score-name">价格</view>
+        <view >{{ information.price }}</view>
+        <image class="photo" src="../../icons/rocket.png"></image>
+        <view class="score-name">质量</view>
+        <view >{{ information.quality }}</view>
+    </view>
+    <view class="text">
+        {{ information.content }}
+    </view>
+</view>

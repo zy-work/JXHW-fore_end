@@ -1,0 +1,2 @@
+<!--pages/search/index.wxml-->
+<SearchInput>搜索热门好物</SearchInput>

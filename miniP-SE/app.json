@@ -1,0 +1,70 @@
+{
+  "pages":[
+    "pages/message/message",
+    "pages/login/index",
+    "pages/userinfo/userinfo",
+    
+    "pages/index/index",
+    "pages/explore/index",
+    "pages/info/info",
+    "pages/user/index",
+    
+    "pages/upload/upload",
+    
+    "pages/user-message/user-message",
+
+    "pages/item_info/index",
+
+    
+    "pages/category/index",
+    "pages/search/index"
+  ],
+  "window":{
+    "backgroundTextStyle":"dark",
+    "navigationBarBackgroundColor": "#87B5D6",
+    "navigationBarTitleText": "鲸享好物",
+    "navigationBarTextStyle":"white"
+  },
+  "tabBar": {
+    "color": "",
+    "selectedColor": "",
+    "backgroundColor": "",
+    "position": "bottom",
+    "borderStyle": "black",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "icons/shouye.png",
+        "selectedIconPath": "icons/shouye_s.png"
+      },
+      {
+        "pagePath": "pages/explore/index",
+        "text": "探索",
+        "iconPath": "icons/tansuo.png",
+        "selectedIconPath": "icons/tansuo_s.png"
+      },
+      {
+        "pagePath": "pages/info/info",
+        "text": "消息",
+        "iconPath": "icons/dkw_xiaoxi.png",
+        "selectedIconPath": "icons/dkw_xiaoxi_s.png"
+      },
+      {
+        "pagePath": "pages/user/index",
+        "text": "用户",
+        "iconPath": "icons/yonghu.png",
+        "selectedIconPath": "icons/yonghu_s.png"
+      }
+    ]
+  },
+  "networkTimeout": {
+    "request": 1000000,
+    "connectSocket": 100000,
+    "uploadFile": 100000,
+    "downloadFile": 100000
+  },
+
+ 
+  "sitemapLocation": "sitemap.json"
+}

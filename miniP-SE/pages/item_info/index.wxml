@@ -1,0 +1,55 @@
+<h1>你有哪些口红，常用或推荐哪支？</h1>
+
+<view class="index_swiper">
+    <swiper indicator-dots circular indicator-color="rgba(0.6,0.2,0,.3)" interval="2000" duration="1000">
+        <swiper-item
+        wx:for="{{swiper_list}}"
+        wx:key="id">
+            <navigator>
+                <image src="{{item.image_src}}" mode="widthFix"></image>
+            </navigator>
+        </swiper-item>
+    </swiper>
+</view>
+
+<view class="answer_section">
+    <view class="user_info">
+        <view class="user_image"></view>
+        <view class="user_name"></view>
+    </view>
+
+    <view class="answer">
+        <text>
+            小姐妹们的支持哇！我来更新口红了，快往下拉看呐！
+            ysl方管13，两个字！显白！但是！涂多了有点点显荧光哇，我个人是偏黄一点的白，然后自认为hold的住嘿嘿（自以为是）....真滴显白TAT
+            薄涂效果
+            然后是这款ofra的口红，色号是miamifever。比较平价的土棕橘色！颜色真滴复古哇！但是真的真的很干哇，可是颜色真的太美了，要哭......软妹币100左右！！
+            更一下：姐妹们！我不代购不微商！买口红的渠道我基本就tb、官网、专柜、代购、自个儿海淘这几个渠道！就经验来说还是tb、代购比较省钱划算了，但是代购也会因为口红的火热程度一直在调价格TAT 我一般瞄准了要买什么口红，就会复制链接到喵喵折app看看它的价格浮动或者有没有优惠券之类的，收藏等它最低价再买哈哈哈。照例随便po一张图
+            希望可以帮到各路滴小仙女们～
+            然后弱弱滴问一句，可以点个赞赞再走嘛～蟹蟹
+        </text>
+    </view>
+</view>
+
+<view class="comment">
+    <view class="top">
+        <view class="shoucang"></view>
+        <view class="dianzan"></view>
+        <view class="xihuan"></view>
+        <view class="fenxiang"></view>
+    </view>
+    <view class="down">
+        <view class="meiguan">
+            <image src="../../icons/dianliang.png" mode="widthFix"></image>
+            美观6
+        </view>
+        <view class="jiage">
+            <image src="../../icons/renmingbi.png" mode="widthFix"></image>
+            价格9
+        </view>
+        <view class="zhiliang">
+            <image src="../../icons/zhiliang.png" mode="widthFix"></image>
+            质量8
+        </view>
+    </view>
+</view>

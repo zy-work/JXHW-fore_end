@@ -1,0 +1,51 @@
+.index_swiper swiper {
+  width: 750rpx;
+  height: 1000rpx;
+  padding: 10rpx;
+  align-content: center;
+}
+.index_swiper swiper image {
+  width: 100%;
+  border-radius: 15rpx;
+}
+h1 {
+  font-size: 47rpx;
+  text-align: center;
+  margin-bottom: 4rpx;
+  font-weight: 600;
+  font-style: inherit;
+  display: block;
+  margin-block-start: 0.67em;
+  margin-block-end: 0.67em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+}
+.answer_section .answer {
+  line-height: 50rpx;
+  padding: 30rpx;
+}
+.answer_section .answer image {
+  width: 700rpx;
+  margin-top: 20rpx;
+  border-radius: 20rpx;
+}
+.comment .down .meiguan,
+.comment .down .jiage,
+.comment .down .zhiliang {
+  float: left;
+  width: 243.33333333rpx;
+  font-family: PingFangSC;
+  font-weight: 600;
+  font-size: 20px;
+  color: #212529;
+  font-style: bold;
+  letter-spacing: 0px;
+  line-height: 29px;
+  text-decoration: none;
+}
+.comment .down .meiguan image,
+.comment .down .jiage image,
+.comment .down .zhiliang image {
+  width: 50rpx;
+}

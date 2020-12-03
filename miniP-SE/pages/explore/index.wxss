@@ -1,0 +1,15 @@
+/* pages/explore/index.wxss */
+.search{
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  height: 70rpx;
+  border: 1rpx solid #e0e0e0;
+  border-radius: 20rpx;
+}
+.search-img{
+  width:40rpx;
+  height: 40rpx;
+  margin-left: 20rpx;
+  margin-right: 20rpx;
+}
