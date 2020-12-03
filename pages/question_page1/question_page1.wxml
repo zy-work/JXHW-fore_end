@@ -1,0 +1,39 @@
+<view class="question_title">
+    <view class="text">
+        对你来说，这个产品的美观比这个产品的质量重要多少呢？
+    </view>
+</view>
+
+
+<view class="questions">
+    <view class="question_item" bindtap = "handleTap"
+    id="1">
+        <view class="text">
+            本人颜狗，好看最重要
+        </view>
+    </view>
+    <view class="question_item" bindtap = "handleTap"
+    id="2">
+        <view class="text">
+            就好看重要一点点吧
+        </view>
+    </view>
+    <view class="question_item" bindtap = "handleTap"
+    id="3">
+        <view class="text">
+            一样重要！我全要
+        </view>
+    </view>
+    <view class="question_item" bindtap = "handleTap"
+    id="4">
+        <view class="text">
+            质量还是比美观重要一点点的
+        </view>
+    </view>
+    <view class="question_item" bindtap = "handleTap"
+    id="5">
+        <view class="text">
+            本人老土派，只要质量好
+        </view>
+    </view>
+</view>

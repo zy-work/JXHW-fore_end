@@ -7,9 +7,6 @@
   width: 100%;
   border-radius: 15rpx;
 }
-.index_floor {
-  height: 1400rpx;
-}
 .index_floor .floor_group .floor_title {
   padding: 20rpx;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -18,18 +15,24 @@
   color: #1d1d1d;
   text-decoration: none;
 }
+.index_floor .floor_group .floor_list {
+  display: flex;
+}
 .index_floor .floor_group .floor_list navigator {
-  float: left;
-  margin-left: 30rpx;
+  width: 330rpx;
+  margin-left: 20rpx;
+  margin-right: 20rpx;
   margin-bottom: 30rpx;
+  padding: 20rpx;
+  padding-bottom: 5rpx;
+  border-color: #bbbbbb;
+  border-width: 5rpx;
+  border-style: solid;
+  border-radius: 8px;
 }
 .index_floor .floor_group .floor_list navigator image {
   overflow: hidden;
-  border-color: #bbbbbb;
-  border-width: 0px;
-  border-style: solid;
-  border-radius: 8px;
-  width: 330rpx;
+  width: 290rpx;
 }
 .index_floor .floor_group .floor_list navigator .recommend {
   width: 320rpx;
@@ -43,6 +46,7 @@
   text-decoration: none;
 }
 .items .items_group .items_title {
+  display: block;
   padding: 20rpx;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-weight: 700;
@@ -51,15 +55,16 @@
   text-decoration: none;
 }
 .items .items_group .items_list navigator {
-  margin: 100rpx;
+  margin: 80rpx;
+  padding: 30rpx;
+  border-color: #a3a3a3;
+  border-width: 5rpx;
+  border-style: solid;
+  border-radius: 8px;
 }
 .items .items_group .items_list image {
   overflow: hidden;
-  border-color: #bbbbbb;
-  border-width: 0px;
-  border-style: solid;
-  border-radius: 8px;
-  width: 600rpx;
+  width: 500rpx;
   height: 300rpx;
 }
 .items .items_group .items_list .recommend {
@@ -89,7 +94,7 @@
   position: relative;
   display: inline-block;
   font-size: 24rpx;
-  /* border: 1px #eee solid;  */
+  /* border    : 1px #eee solid;  */
 }
 .welfares-image {
   width: 100%;
@@ -98,7 +103,7 @@
 }
 .welfares-good .product-name {
   color: #000;
-  /* height: 28px; */
+  /* height    : 28px; */
   text-align: left;
   margin: 0px 5px;
   margin-bottom: 5px;

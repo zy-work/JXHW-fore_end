@@ -1,0 +1,16 @@
+<checkbox-group bindchange="checkboxChange">
+    <checkbox
+    wx:for="{{question_list}}"
+    wx:key="postId"
+    wx:for-item="item"
+    value="{{item.postId}}">
+    <image class="user_image" src="{{item.coverLink}}" mode="widthFix">
+        
+    </image>
+    {{item.title}}
+    </checkbox>
+</checkbox-group>
+
+<view class="submit" bindtap = "choose_submit">
+    提交
+</view>

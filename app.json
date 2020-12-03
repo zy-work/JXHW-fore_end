@@ -1,12 +1,23 @@
 {
   "pages":[
-    
-    "pages/login/index",
     "pages/index/index",
+    "pages/recommend_after_chosen/recommend_after_chosen",
+    "pages/login/index",
+    
+    "pages/question_entry/question_entry",
+    "pages/question_page1/question_page1",
+    
+    
+    "pages/question_page2/question_page2",
+    "pages/question_page3/question_page3",
+    
+    
+    
+    "pages/info/info",
     
     
     "pages/userinfo/userinfo",
-    "pages/recommend_after_chosen/recommend_after_chosen",
+    
     
     "pages/upload/upload",
     "pages/explore/index",
@@ -39,13 +50,13 @@
         "selectedIconPath": "icons/shouye_s.png"
       },
       {
-        "pagePath": "pages/explore/index",
+        "pagePath": "pages/question_entry/question_entry",
         "text": "探索",
         "iconPath": "icons/tansuo.png",
         "selectedIconPath": "icons/tansuo_s.png"
       },
       {
-        "pagePath": "pages/message/index",
+        "pagePath": "pages/info/info",
         "text": "消息",
         "iconPath": "icons/dkw_xiaoxi.png",
         "selectedIconPath": "icons/dkw_xiaoxi_s.png"

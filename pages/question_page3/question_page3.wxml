@@ -1,0 +1,39 @@
+<view class="question_title">
+    <view class="text">
+        对你来说，这个产品的价格比这个产品的质量重要多少呢？
+    </view>
+</view>
+
+
+<view class="questions">
+    <view class="question_item" bindtap = "handleTap"
+    id="1">
+        <view class="text">
+            太贵了，质量好我也买不起
+        </view>
+    </view>
+    <view class="question_item" bindtap = "handleTap"
+    id="2">
+        <view class="text">
+            热爱平价，追求高性价比
+        </view>
+    </view>
+    <view class="question_item" bindtap = "handleTap"
+    id="3">
+        <view class="text">
+            一样重要！我全要
+        </view>
+    </view>
+    <view class="question_item" bindtap = "handleTap"
+    id="4">
+        <view class="text">
+            在追求质量的路上，我愿意出血
+        </view>
+    </view>
+    <view class="question_item" bindtap = "handleTap"
+    id="5">
+        <view class="text">
+            本人土豪，价格随意
+        </view>
+    </view>
+</view>

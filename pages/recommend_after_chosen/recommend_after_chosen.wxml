@@ -1,9 +1,10 @@
 <view class="recommend_text">
   <text>
     <text class="title">亲爱的“小哪吒”：</text>
-    <text class="content">\n小鲸思考了一番</text>
+    <text class="content">\n小鲸思考了一番，觉得你还是购买“{{recommend_title}}”比较好...\n当然咯，具体要买什么，还是要由小主决定啦！</text>
   </text>
 </view>
+
 
 <!--楼层-->
 <view class="index_floor">
@@ -24,3 +25,8 @@
     </view>
 </view>
 <!--楼层结束-->
+
+
+<view class="back_to_explore" bindtap = "choose_back">
+    重新推荐
+</view>
