@@ -1,11 +1,14 @@
 {
   "pages":[
-    "pages/recommend_after_chosen/recommend_after_chosen",
-    "pages/index/index",
+    
     "pages/login/index",
+    "pages/index/index",
     
     
+    "pages/userinfo/userinfo",
+    "pages/recommend_after_chosen/recommend_after_chosen",
     
+    "pages/upload/upload",
     "pages/explore/index",
     "pages/message/index",
     "pages/user/index",

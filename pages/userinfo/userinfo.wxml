@@ -1,0 +1,22 @@
+<!--pages/userinfo/userinfo.wxml-->
+<view class="con">
+    <view class="title">
+        <text class="title-text">编辑资料</text>
+        <image src="../../icons/avater.jpg" class="head"></image>
+    </view>
+    <view class="info">
+        <view class="name">
+            <text class="inputname">昵称</text>
+            <input class="input" placeholder="{{ username }}" bindinput="inputname"/>
+        </view>
+        <view class="gender">
+            <text class="inputname">性别</text>
+        </view>
+        <view class="birthday">
+            <text class="inputname">生日</text>
+        </view>
+        <view class="sign">
+            <text class="inputname">签名</text>
+        </view>
+    </view>
+</view>

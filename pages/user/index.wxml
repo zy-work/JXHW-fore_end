@@ -5,16 +5,18 @@
             <view class="uname">
                 <view>
                     <p style="line-height:0; margin-bottom:5px;">
-                        <view class="uname_font">
-                            小哪吒</view>
+                        <view wx:if="{{info.username.length>0}}" class="uname_font">
+                            {{ info.username }}</view>
+                        <view wx:else class="uname_font">DefaultUser</view>
                     </p>
                 </view>
 
                 <view class="num_wrapper">
                     <view>
                         <p style="line-height:0; margin-bottom:5px;">
-                            <view class="white_word">
-                                憨憨哪吒，天天开心</view>
+                            <view wx:if="{{info.userSign.length>0}}" class="white_word">
+                                {{ info.userSign }}</view>
+                            <view wx:else class="white_word">这个逼啥都没写</view>
                         </p>
                     </view>
                 </view>
@@ -23,10 +25,12 @@
             <view class="avater_wrapper">
                 <view class="face">
                     <view style="display: none; background-color: transparent;"></view>
-                    <view class="wrapper">
-                        <image class="img" src="../../icons/avater.jpg" draggable="false"
+                    <navigator url="../userinfo/userinfo" class="wrapper">
+                        <image class="img" wx:if="{{info.headLink.length>0}}" src="https://forestj.oss-cn-beijing.aliyuncs.com/{{ info.headLink }}" draggable="false"
                             style="display: block; width: 60px; height: 60px;" />
-                    </view>
+                        <image class="img" wx:else src="../../icons/avater.jpg" draggable="false"
+                            style="display: block; width: 60px; height: 60px;" />
+                    </navigator>
                 </view>
                 <view class="region gesture " style="display: none;"></view>
             </view>
@@ -34,11 +38,11 @@
         </view>
         <view class="clearfix" style="margin-top:20px">
             <view style="width: 30%;float: left;margin-left:40rpx">
-                <view class="black_word">97</view>
+                <view class="black_word">{{info.shareNum}}</view>
                 <view class="white_word">分享</view>
             </view>
             <view style="width: 30%;float: left;">
-                <view class="black_word">97</view>
+                <view class="black_word">{{ info.fanNum }}</view>
                 <view class="white_word">粉丝</view>
             </view>
         </view>
@@ -52,9 +56,9 @@
             <image src="../../icons/心.png" class="love_icon"></image>
         </view>
 
-        <view class="plus_wrapper">
+        <navigator url="../upload/upload" class="plus_wrapper">
             <image src="../../icons/加号.png" class="love_icon"></image>
-        </view>
+        </navigator>
     </view>
 
     <view style="clear:both">
@@ -71,12 +75,12 @@
         </view>
         <view class="floor_list">
             <navigator url="/pages/item_info/index" open-type="navigate"
-            wx:for="{{floor_list}}"
+            wx:for="{{ record }}"
             wx:for-item="item2"
             wx:for-index="index2"
             wx:key="id">
-                <image src="{{item2.src}}" mode="widthFix"></image>
-                <view class="recommend">{{item2.recommend}}</view>
+                <image src="https://forestj.oss-cn-beijing.aliyuncs.com/{{item2.coverLink}}" mode="widthFix"></image>
+                <view class="recommend">{{item2.title}}</view>
             </navigator>
         </view>
     </view>

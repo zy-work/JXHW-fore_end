@@ -1,0 +1,30 @@
+/* pages/userinfo/userinfo.wxss */
+.con{
+    display: flex;
+    flex-direction: column;
+}
+.title{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-top: 40rpx;
+}
+.title-text{
+    font-size: 40rpx;
+    font-weight: bolder;
+    margin-left: 50rpx;
+}
+.head{
+    width:120rpx;
+    height: 120rpx;
+    border: 1rpx solid #ffffff;
+    border-radius: 120rpx;
+    margin-left: 370rpx;
+}
+.info{
+    display: flex;
+    flex-direction: column;
+}
+.name{
+    display: flex;
+}

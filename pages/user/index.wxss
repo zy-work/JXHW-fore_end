@@ -1,5 +1,5 @@
 .top_wrapper {
-  background-color: #8bd3ff;
+  background-color: rgb(135,181,214);
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
 }
@@ -35,7 +35,7 @@
   width: 86px !important;
   height: 30px;
   z-index: 38;
-  background-color: #8bd3ff;
+  background-color: rgb(135,181,214);
   border: none;
   color: #ffffff;
   border-radius: 60px;
