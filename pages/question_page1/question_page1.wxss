@@ -2,7 +2,7 @@
   height: 300rpx;
   margin: 50rpx;
   border-radius: 50rpx;
-  background-color: wheat;
+  background-color: #74b3e0;
 }
 .question_title .text {
   text-align: center;
@@ -16,7 +16,7 @@
 .questions .question_item {
   border-radius: 20rpx;
   height: 150rpx;
-  background-color: aquamarine;
+  background-color: #bbd9f0;
   text-align: center;
   padding: 60rpx;
   margin-bottom: 50rpx;

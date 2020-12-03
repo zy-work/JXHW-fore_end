@@ -16,8 +16,10 @@
     height: 190rpx;
 }
 .container{
-    /* width: 730rpx; */
-    /* margin-left: 100rpx; */
+    margin-top: 100rpx;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .con {
     width: 750rpx;
@@ -34,7 +36,6 @@
     text-decoration:none;
 }
 .input1 {
-    margin-left: 80rpx;
     display: flex;
     align-items: center;
     width: 80%;
@@ -58,13 +59,15 @@
     margin-left: 30rpx;
     width:40rpx;
     height:40rpx;
-    z-index: 100;
+}
+.line{
+    width: 30rpx;
+    height: 40rpx;
 }
 .inputtext{
     margin-left: 10rpx;
 }
 .input2{
-    margin-left: 80rpx;
     display: flex;
     align-items: center;
     margin-bottom: 50rpx;
@@ -88,7 +91,6 @@
     margin-left: 30rpx;
     width:40rpx;
     height:40rpx;
-    z-index: 100;
 }
 .getcode{
     display: flex;
@@ -97,6 +99,7 @@
     width: 74px;
     height: 32px;
     z-index: 9;
+    margin-right: 15rpx;
     background-color: rgb(155, 196, 226);
     border: none;
     color: rgb(255, 255, 255);
@@ -110,7 +113,8 @@
     opacity: 1;
 }
 .title{
-    margin-bottom: 70rpx;
+    width: 750rpx;
+    margin-bottom: 100rpx;
     font-family:PingFangSC;
     font-weight:700;
     font-size:52rpx;
@@ -141,9 +145,25 @@
     height: 90rpx;
     z-index: 9;
     background-color: rgb(135, 181, 214);
-    border: 0;
+    border: none;
     color: rgb(255, 255, 255);
     border-radius:100rpx;
     text-align: center;
     line-height: 23px;
+    font-size: 30rpx;
+}
+/* 微信登陆 */
+.wxLogin{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100rpx;
+}
+.WX{
+    width: 80rpx;
+    height: 80rpx;
+}
+.WXtext{
+    font-size: 25rpx;
+    color:#87B5D6;
 }

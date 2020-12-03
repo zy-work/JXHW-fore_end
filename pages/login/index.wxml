@@ -6,7 +6,8 @@
     <view class="title" data-boldtype="0">welcome to 鲸享好物</view>
     <!-- 手机号输入 -->
     <view class="input1">
-        <image class="phone-icon" src="../../icons/手机.png"></image>
+        <image class="phone-icon" src="../../icons/phone.png"></image>
+        <image class="line" src="../../icons/line.png"></image>
         <input class="inputtext"
         placeholder="请输入手机号"
         placeholder-class="input-placeholder"
@@ -15,7 +16,8 @@
     </view>
     <!-- 验证码输入 -->
     <view class="input2">
-        <image class="code-icon" src="../../icons/验证码.png" />
+        <image class="code-icon" src="../../icons/Code.png" />
+        <image class="line" src="../../icons/line.png"></image>
         <input class="inputtext"
         placeholder="请输入验证码"
         placeholder-class="input-placeholder"
@@ -30,9 +32,10 @@
     <button class="Log" bindtap="Login">
         <view >登陆</view>
     </button>
+    <view class="wxLogin" bindtap="wxLoginHandle" >
+        <image class="WX" src="../../icons/WX.png"></image>
+    <view class="WXtext">微信一键登录</view>
+    </view>
 </view>
 
-<view class="" hover-class="none" hover-stop-propagation="false">
-    <button></button>
-</view>
 

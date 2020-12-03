@@ -1,7 +1,3 @@
-// pages/firstPage/firstPage.js
-
-//登录成功的页面跳转还没完成
-
 Page({
   data: {
     info: {},
@@ -48,19 +44,24 @@ Page({
       success: function (res) {
         console.log(res.data)
         var id1 = res.data.data.userId;
-        console.log(id1)
+        wx.setStorage({
+          data: id1,
+          key: 'userId',
+        })
       },
       fail: function (res) {
         console.log(res.data)
       }
     })
-    var id = 1;
+    var id = wx.getStorageSync('userId');
+    console.log(id)
     //获取发帖历史
     wx.request({
       url: 'https://www.forestj.top:11451/post/self',
       method: 'GET',
       data:{
-        userId: id
+        userId: id,
+        pageNum: 2,
       },
       success: function (res) {
         if(res.data.status==200){

@@ -1,0 +1,30 @@
+<!--pages/user-message/user-message.wxml-->
+<view class="con">
+    <view class="user">
+        <image class="user-head" wx:if="{{info.head_link.length}}" src="https://forestj.oss-cn-beijing.aliyuncs.com/{{ info.head_link }}"></image>
+        <view class="user-maessage">
+            <view class="user-name">{{ info.username }}</view>
+            <view class="user-sign">{{ info.user_sign }}</view>
+        </view>
+        <view class="follow">
+            <image class="follow-icon" src="../../icons/guanzhu.png"></image>
+        </view>
+    </view>
+    <view class="obj">
+        <view class="onesobj">
+            <view>Ta的好物</view>
+            <view class="follow-num">
+                <text class="follow-number">{{ info.fanNum }}</text>
+                <text class="follow-num-text">关注</text>
+            </view>
+        </view>
+        <view class="objs">
+            <view class="post"  wx:for="{{ record }}">
+                <navigator url="../message/message?recommend_id={{ item.postId }}" >
+                <image class="post-img" mode="widthFix" wx:if="{{item.coverLink.length}}" src="https://forestj.oss-cn-beijing.aliyuncs.com/{{ item.coverLink }}"></image>
+                <text class="post-title">{{ item.title }}</text>
+                </navigator>
+            </view >
+        </view>
+    </view>
+</view>

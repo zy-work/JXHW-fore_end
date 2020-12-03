@@ -8,7 +8,7 @@ checkbox .user_image {
 }
 .submit {
   border-radius: 30rpx;
-  background-color: antiquewhite;
+  background-color: #87b5d6;
   text-align: center;
   height: 100rpx;
   margin: 50rpx;

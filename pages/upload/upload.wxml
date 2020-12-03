@@ -33,8 +33,8 @@
                 <view class="score">
                     <image src="../../icons/type.png" class="score_icon"/>
                     <text class="score_class">种类</text>
-                    <picker value="{{ index }}" range="{{ type }}" bindchange="bindPickerChange">
-                        <view class="picker" name="type">{{type[index]?type[index]:'请选择'}}</view>
+                    <picker value="{{ index }}" range="{{ type }}" bindchange="bindPickerChange" name="type">
+                        <view class="picker" >{{type[index]?type[index]:'请选择'}}</view>
                     </picker>
                 </view>
             </view>

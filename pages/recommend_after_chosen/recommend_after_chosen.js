@@ -83,7 +83,7 @@ Page({
     });
   },
   choose_back:function(){
-    wx.navigateTo({
+    wx.switchTab({
       url: '../question_entry/question_entry',
     });
   }

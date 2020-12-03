@@ -1,6 +1,12 @@
 {
   "pages":[
+
     "pages/index/index",
+
+
+    "pages/info/info",
+    "pages/user-message/user-message",
+    
     "pages/recommend_after_chosen/recommend_after_chosen",
     "pages/login/index",
     
@@ -13,7 +19,7 @@
     
     
     
-    "pages/info/info",
+    
     
     
     "pages/userinfo/userinfo",
@@ -21,18 +27,14 @@
     
     "pages/upload/upload",
     "pages/explore/index",
-    "pages/message/index",
+    "pages/message/message",
     "pages/user/index",
 
-    "pages/item_info/index",
-
-    
-    "pages/category/index",
-    "pages/search/index"
+    "pages/item_info/index"
   ],
   "window":{
     "backgroundTextStyle":"dark",
-    "navigationBarBackgroundColor": "#8bd3ff",
+    "navigationBarBackgroundColor": "#87B5D6",
     "navigationBarTitleText": "鲸享好物",
     "navigationBarTextStyle":"white"
   },
@@ -70,6 +72,13 @@
     ]
   },
   
+  "networkTimeout": {
+    "request": 1000000,
+    "connectSocket": 100000,
+    "uploadFile": 100000,
+    "downloadFile": 100000
+  },
 
   "sitemapLocation": "sitemap.json"
 }
+

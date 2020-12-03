@@ -1,0 +1,109 @@
+/* pages/user-message/user-message.wxss */
+.con{
+    width: 750rpx;
+    background-color: rgb(135,181,214);
+}
+.user{
+    width: 670rpx;
+    display: flex;
+    align-items: center;
+    height: 120rpx;
+    padding-top: 160rpx;
+    margin-left: 40rpx;
+    margin-bottom: 80rpx;
+}
+.user-head{
+    width: 100rpx;
+    height: 100rpx;
+    border: 1rpx solid #e0e0e0;
+    border-radius: 100rpx;
+    margin-right: 20rpx;
+}
+.user-message{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    margin-right: 20rpx;
+}
+.user-name{
+    color: rgb(255,255,255);
+    width: 490rpx;
+    font-weight:bold;
+}
+.user-sign{
+    color: rgb(110,127,138);
+    width: 490rpx;
+    font-size: 20rpx;
+}
+.follow{
+    width: 60rpx;
+    height: 60rpx;
+    background-color: rgb(182,210,230);
+    border: 1rpx solid rgb(182,210,230);
+    border-radius: 60rpx;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.follow-icon{
+    width: 40rpx;
+    height:40rpx;
+}
+.obj{
+    width: 750rpx;
+    background-color: rgb(255,255,255);
+    border: 1rpx solid #ffffff;
+    border-radius: 70rpx;
+}
+.onesobj{
+    width: 750rpx;
+    display: flex;
+    align-items: center;
+    padding: 30rpx 50rpx;
+    font-weight:bold;
+}
+.follow-num{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 450rpx;
+}
+.follow-number{
+    font-size: 30rpx;
+    font-weight:bold;
+}
+.follow-num-text{
+    font-size: 20rpx;
+    color:  rgb(217,217,217);
+}
+.objs{
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+}
+.post{
+    width: 320rpx;
+    margin: 25rpx;
+    display: flex;
+    flex-direction: column;
+    border:1rpx solid #e0e0ee;
+    border-radius: 20rpx;
+    justify-content: center;
+}
+.post-img{
+    width: 300rpx;
+    border:1rpx solid #ffffff;
+    border-radius: 20rpx;
+}
+.post-title{
+    margin-top: 10rpx;
+    margin-bottom: 10rpx;
+    margin-left: 10rpx;
+    width: 300rpx;
+    display: flex;
+    align-items: center;
+    border:1rpx solid #ffffff;
+    border-radius: 20rpx;
+    font-size: 25rpx;
+    font-weight:bold;
+}

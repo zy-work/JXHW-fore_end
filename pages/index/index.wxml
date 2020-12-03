@@ -10,7 +10,7 @@
             <swiper-item
             wx:for="{{swipper_list}}"
             wx:key="postId">
-                <navigator>
+                <navigator url="/pages/message/message?pid={{item2.postId}}" open-type="navigate">
                     <image src="{{item.coverLink}}" mode="scaleToFill"></image>
                 </navigator>
             </swiper-item>
@@ -25,7 +25,7 @@
                 好物推荐
             </view>
             <view class="floor_list">
-                <navigator url="/pages/item_info/index?recommend_id={{item2.postId}}" open-type="navigate"
+                <navigator url="/pages/message/message?pid={{item2.postId}}" open-type="navigate"
                 wx:for="{{swipper_list}}"
                 wx:for-item="item2"
                 wx:for-index="index2"
@@ -47,7 +47,7 @@
             帖子详情
         </view>
         <view class="items_list">
-            <navigator url="/pages/item_info/index?recommend_id={{item2.postId}}" open-type="navigate"
+            <navigator url="/pages/message/message?pid={{item2.postId}}" open-type="navigate"
             wx:for="{{items_list}}"
             wx:for-item="item2"
             wx:for-index="index2"

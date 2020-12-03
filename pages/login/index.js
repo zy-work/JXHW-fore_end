@@ -159,10 +159,10 @@ Page({
         success: function ( res ) {
           if( res.data.status==200 ){
             wx.setStorageSync("token", res.header.Authorization);
-            console.log(res.data)
             wx.switchTab({
               url: '../index/index'
             })
+            console.log('登陆成功')
           }
         },
         fail: function ( res ) {
@@ -182,5 +182,10 @@ Page({
         }
       })
     }
+ },
+ wxLoginHandle: function () {
+   wx.switchTab({
+     url: '../index/index',
+   })
  }
 })

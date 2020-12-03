@@ -1,0 +1,79 @@
+/* pages/message/message.wxss */
+page{
+    background-color: #f5f5f5;
+}
+.con{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    margin-top: 20rpx;
+}
+.user{
+    display: flex;
+    align-items: center;
+    width: 750rpx;
+    justify-content: flex-start;
+    padding-left: 50rpx;
+    font-size: 40rpx;
+    font-weight: bolder;
+}
+.user-haed{
+    width: 100rpx;
+    height: 100rpx;
+    border: 1rpx solid #e0e0e0;
+    border-radius: 100rpx;
+    margin-right: 20rpx;
+}
+.obj{
+    width: 670rpx;
+    margin-right: 40rpx;
+    margin-left:40rpx;
+    font-weight: bolder;
+}
+.obj-img{
+    width: 670rpx;
+    margin-top:20rpx;
+}
+.comments{
+    display: flex;
+    align-items: center;
+    width: 750rpx;
+    color: #87B5D6;
+    justify-content: flex-end;
+    padding-right: 100rpx;
+    font-size: 20rpx;
+}
+.title{
+    font-size: 50rpx;
+}
+.icon{
+    width: 40rpx;
+    height: 40rpx;
+    margin-left: 10rpx;
+    margin-right: 10rpx;
+}
+.remark{
+    width: 750rpx;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40rpx;
+    padding-right: 40rpx;
+}
+.photo{
+    width: 60rpx;
+    height: 60rpx;
+    margin-left: 40rpx;
+}
+.score-name{
+    margin-right: 20rpx;
+}
+.text{
+    margin-top: 40rpx;
+    width: 670rpx;
+    margin-bottom: 100rpx;
+    padding:10rpx;
+    background-color: #ffffff;
+    border: 1prx solid #ffffff;
+    border-radius: 10rpx;
+}

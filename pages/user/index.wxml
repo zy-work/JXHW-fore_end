@@ -74,7 +74,7 @@
             
         </view>
         <view class="floor_list">
-            <navigator url="/pages/item_info/index" open-type="navigate"
+            <navigator url="/pages/message/message?" open-type="navigate"
             wx:for="{{ record }}"
             wx:for-item="item2"
             wx:for-index="index2"

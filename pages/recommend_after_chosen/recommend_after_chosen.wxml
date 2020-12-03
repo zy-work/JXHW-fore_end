@@ -13,7 +13,7 @@
             相关推荐
         </view>
         <view class="floor_list">
-            <navigator url="/pages/item_info/index?recommend_id={{item2.postId}}" open-type="navigate"
+            <navigator url="/pages/message/message?pid={{item2.postId}}" open-type="navigate"
             wx:for="{{swipper_list}}"
             wx:for-item="item2"
             wx:for-index="index2"

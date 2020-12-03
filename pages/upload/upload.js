@@ -35,11 +35,9 @@ Page({
   formSubmit: function (e) {
     var that = this;
     var img = wx.getStorageSync('Img');
-    var beauty = parseInt(e.detail.value.beauty_score);
-    var price = parseInt(e.detail.value.price_score);
-    var quality = parseInt(e.detail.value.quality_score);
-    var typ = parseInt(e.detail.value.type);
-    console.log(typ)
+    var title = e.detail.value.title;
+    var comment = e.detail.value.comment;
+    console.log(title+comment)
     wx.uploadFile({
      url: 'https://www.forestj.top:11451/post/add',
      filePath: img,
@@ -48,8 +46,8 @@ Page({
       Authorization: wx.getStorageSync("token")
     },
      formData: {
-      title: e.detail.value.comment_title,
-      content: e.detail.value.comment_content,
+      title: title,
+      content: comment,
       beauty: parseInt(e.detail.value.beauty_score),
       price: parseInt(e.detail.value.price_score),
       quality: parseInt(e.detail.value.quality_score),
@@ -57,6 +55,9 @@ Page({
      },
      success: function (res) {
       console.log(res)
+      wx.switchTab({
+        url: '../user/index',
+      })
      }
     })
   },
