@@ -37,7 +37,7 @@ Page({
   onLoad: function(options){
     wx.request({
       // url: 'https://api-hmugo-web.itheima.net/api/public/v1/home/swiperdata',
-      url: 'http://106.14.209.11:11451/post/search',
+      url: 'https://www.forestj.top:11451/post/advice',
       method: 'GET',
       header: {
         Authorization: wx.getStorageSync("token")
@@ -46,7 +46,7 @@ Page({
       // responseType: 'text',
       success: (result)=>{
         console.log(result)
-        var list = result.data.data.records
+        var list = result.data.data
         var url_pre = 'http://forestj.oss-cn-beijing.aliyuncs.com/'
         for(var i=0; i < list.length; i++){
           list[i].coverLink = url_pre + list[i].coverLink;

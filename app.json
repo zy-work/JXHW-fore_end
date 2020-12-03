@@ -1,10 +1,10 @@
 {
   "pages":[
-    
+    "pages/recommend_after_chosen/recommend_after_chosen",
     "pages/index/index",
     "pages/login/index",
     
-    "pages/recommend_after_chosen/recommend_after_chosen",
+    
     
     "pages/explore/index",
     "pages/message/index",
