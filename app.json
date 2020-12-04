@@ -1,7 +1,9 @@
 {
   "pages":[
-    "pages/login/index",
     "pages/index/index",
+    "pages/search/search",
+    "pages/login/index",
+    
 
 
     "pages/info/info",
@@ -20,9 +22,9 @@
     
     
     
-    
-    
     "pages/userinfo/userinfo",
+    
+    
     
     
     "pages/upload/upload",

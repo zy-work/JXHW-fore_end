@@ -1,5 +1,5 @@
 <view class="search_input">
-    <navigator url="/pages/question_entry/question_entry" open-type="navigate">
+    <navigator url="/pages/search/search" open-type="navigate">
         搜索热门好物
     </navigator>
 </view>
