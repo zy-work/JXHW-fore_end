@@ -40,7 +40,9 @@
     "backgroundTextStyle":"dark",
     "navigationBarBackgroundColor": "#87B5D6",
     "navigationBarTitleText": "鲸享好物",
-    "navigationBarTextStyle":"white"
+    "navigationBarTextStyle":"white",
+    "enablePullDownRefresh": true,
+    "onReachBottomDistance": 50
   },
   "tabBar": {
     "color": "",
@@ -85,4 +87,3 @@
 
   "sitemapLocation": "sitemap.json"
 }
-
