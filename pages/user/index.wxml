@@ -53,11 +53,11 @@
             我的分享
         </button>
         <view class="love_wrapper">
-            <image src="../../icons/心.png" class="love_icon"></image>
+            <image src="../../icons/heart.png" class="love_icon"></image>
         </view>
 
         <navigator url="../upload/upload" class="plus_wrapper">
-            <image src="../../icons/加号.png" class="love_icon"></image>
+            <image src="../../icons/plus.png" class="love_icon"></image>
         </navigator>
     </view>
 
@@ -85,4 +85,5 @@
         </view>
     </view>
 </view>
+<button class="cancellation" bindtap="cancellation">退出登录</button>
 <!--楼层结束-->

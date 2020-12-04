@@ -111,6 +111,37 @@ Page({
       clearInterval(setTimer)
     })
   },
+  //微信登陆
+  wxLoginHandle:function (){
+    //获取code
+    wx.login({
+      success(res) {
+        let code = res.code;
+        // console.log(code)
+        //获得code成功后向后端申请登陆
+        wx.request({
+          url: 'https://www.forestj.top:11451/user/login/wechat',
+          method:'POST',
+          header: {
+            Authorization: wx.getStorageSync("token")
+          },
+          data: {
+            code: code ,
+          },
+          success(res) {
+            if(res.data.status==200){
+              console.log(res)
+              //登陆成功后保存header并跳转
+              wx.setStorageSync("token", res.header.Authorization);
+              wx.switchTab({
+                url: '../index/index',
+              })
+            }
+          },
+        })
+      }
+    })
+  },
   Login: function () {
     console.log('请求登录')
     var num=this.data.TeleNumber;
@@ -183,9 +214,22 @@ Page({
       })
     }
  },
- wxLoginHandle: function () {
-   wx.switchTab({
-     url: '../index/index',
-   })
- }
+//  wxLoginHandle: function () {
+//    wx.switchTab({
+//      url: '../index/index',
+//    })
+//  },
+//  onLoad: function (options) {
+//   var that = this;
+//   let token = wx.getStorageSync('token');
+//   if(token){
+//     wx.checkSession({
+//       success: (res) => {
+//         wx.switchTab({
+//           url: '../index/index',
+//         })
+//       },
+//     })
+//   }
+//  },
 })

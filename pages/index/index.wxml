@@ -11,7 +11,7 @@
             wx:for="{{swipper_list}}"
             wx:key="postId">
                 <navigator url="/pages/message/message?pid={{item2.postId}}" open-type="navigate">
-                    <image src="{{item.coverLink}}" mode="scaleToFill"></image>
+                    <image src="{{item.coverLink}}" mode=""></image>
                 </navigator>
             </swiper-item>
         </swiper>

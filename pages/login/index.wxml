@@ -27,7 +27,7 @@
         <button class="getcode" bindtap="SendCode" disabled="{{ btnDisabled }}">{{ btnValue }}</button>
     </view>
 
-    <view class="con">未注册的手机号验证后自动创建摄图账号</view>
+    <view class="con">未注册的手机号验证后自动创建鲸享账号</view>
 
     <button class="Log" bindtap="Login">
         <view >登陆</view>

@@ -167,3 +167,16 @@
   line-height: 30rpx;
   text-decoration: none;
 }
+.cancellation{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width:300rpx;
+  height: 100rpx;
+  border: 1rpx solid #ffffff;
+  border-radius: 200rpx;
+  background-color: #eb5759;
+  color:#ffffff;
+  font-weight: bolder;
+}
+

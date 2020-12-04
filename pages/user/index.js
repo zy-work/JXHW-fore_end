@@ -78,5 +78,21 @@ Page({
         }
       } 
     })
-  }
+  },
+  cancellation:function () {
+    wx.removeStorage({
+      key: 'token',
+      success (res) {
+        console.log('注销成功！')
+        wx.navigateTo({
+          url: '../login/index',
+        })
+      }
+    })
+  },
+  onPullDownRefresh: function () {
+    　　wx.showNavigationBarLoading(); //在标题栏中显示加载图标
+        this.onLoad()
+        wx.stopPullDownRefresh() //停止下拉刷新
+  },
 })
