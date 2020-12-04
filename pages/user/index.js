@@ -61,7 +61,7 @@ Page({
       method: 'GET',
       data:{
         userId: id,
-        pageNum: 2,
+        pageNum: 1,
       },
       success: function (res) {
         if(res.data.status==200){

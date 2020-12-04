@@ -1,5 +1,5 @@
 .top_wrapper {
-  background-color: rgb(135,181,214);
+  background-color: #8bd3ff;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
 }
@@ -35,7 +35,7 @@
   width: 86px !important;
   height: 30px;
   z-index: 38;
-  background-color: rgb(135,181,214);
+  background-color: #8bd3ff;
   border: none;
   color: #ffffff;
   border-radius: 60px;
@@ -143,8 +143,10 @@
   color: #1d1d1d;
   text-decoration: none;
 }
+.index_floor .floor_group .floor_list {
+  display: flex;
+}
 .index_floor .floor_group .floor_list navigator {
-  float: left;
   margin-left: 30rpx;
   margin-bottom: 30rpx;
 }
@@ -167,16 +169,15 @@
   line-height: 30rpx;
   text-decoration: none;
 }
-.cancellation{
-  display: flex;
+.cancellation {
+  display: block;
   align-items: center;
   justify-content: center;
-  width:300rpx;
+  width: 300rpx;
   height: 100rpx;
   border: 1rpx solid #ffffff;
   border-radius: 200rpx;
   background-color: #eb5759;
-  color:#ffffff;
+  color: #ffffff;
   font-weight: bolder;
 }
-
