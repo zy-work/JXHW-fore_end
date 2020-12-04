@@ -1,8 +1,10 @@
 {
   "pages":[
+
+    "pages/login/index",
     "pages/index/index",
     "pages/search/search",
-    "pages/login/index",
+ 
     
 
 

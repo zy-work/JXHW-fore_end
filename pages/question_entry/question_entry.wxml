@@ -4,10 +4,10 @@
     wx:key="postId"
     wx:for-item="item"
     value="{{item.postId}}">
-    <image class="user_image" src="{{item.coverLink}}" mode="widthFix">
+    <image class="user_image" src="{{item.coverLink}}" mode="">
         
     </image>
-    {{item.title}}
+    <text>{{item.title}}<text>
     </checkbox>
 </checkbox-group>
 
